@@ -4,6 +4,7 @@ import SelectMenu from "./components/SelectMenu";
 import "./App.css"
 import CountryCard from "./components/CountryCard";
 import CountriesContainer from "./components/CountriesList";
+import CountriesList from "./components/CountriesList";
 
 const App = () => {
     return(
@@ -15,7 +16,7 @@ const App = () => {
        <SelectMenu/>
         </div>
         <div className="country-container">
-            <CountriesContainer/>
+            <CountriesList/>
         </div>
         </main>
         </>
