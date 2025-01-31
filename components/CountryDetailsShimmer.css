@@ -12,7 +12,7 @@
 }
   
   
-  .shimmer-card {
+  .shimmer-box {
     width: 100%;
     height: 350px;
     background-color: #ccc;
@@ -21,7 +21,7 @@
     margin-bottom: 20px;
   }
   
-  .shimmer-card h1, .shimmer-card p {
+  .shimmer-box h1, .shimmer-box p {
     background-color: #ddd;
     margin: 10px 0;
     height: 20px;
@@ -29,7 +29,7 @@
     border-radius: 4px;
   }
   
-  .shimmer-card p {
+  .shimmer-box p {
     margin-top: 5px;
     width: 80%;
   }
