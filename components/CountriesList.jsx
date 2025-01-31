@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import countriesData from '../countriesData';
+import CountryListShimmer from "./CountriesListShimmer";
 import CountryCard from "./CountryCard";
 
 export default function CountriesList({ query }) {
@@ -28,5 +29,8 @@ export default function CountriesList({ query }) {
       );
     });
 
-  return <div className="countries-container">{array}</div>;
+  return <> 
+  {countriesData.length ===0? <CountryListShimmer/> :
+  <div className="countries-container">{array}</div>}
+  </>;
 }

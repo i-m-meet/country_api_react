@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./CountryDetails.css";
 import { Link, useParams } from "react-router";
+import CountryDetailShimmer from "./CountryDetailsShimmer";
 
 export default function CountryDetails() {
   const params = useParams();
@@ -38,7 +39,7 @@ export default function CountryDetails() {
             .then((res) => res.json())
             .then(([borderCountry]) =>{
                 return borderCountry.name.common
-                // setCountryData((prev) => ({ ...prev, borders: [...prev.borders, borderCountry.name.common ] }))
+                
             })
         })).then((borders) =>{
             setCountryData((prev) => ({...prev, borders}))
@@ -53,7 +54,7 @@ export default function CountryDetails() {
     return <div>Page you want to access is not valid</div>;
   }
   return countryData === null ? (
-    "Loading...."
+    <CountryDetailShimmer/>
   ) : (
     <main>
       <div className="country-details-container">
