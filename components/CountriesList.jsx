@@ -25,6 +25,7 @@ export default function CountriesList({ query }) {
           flag={country.flags.svg}
           population={country.population}
           region={country.region}
+          data={country}
         />
       );
     });

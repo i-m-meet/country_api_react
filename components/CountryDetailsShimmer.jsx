@@ -1,7 +1,7 @@
 import React from 'react';
 import './CountryDetailsShimmer.css'; 
 
-export default function CountryDetailShimmer() {
+export default function CountryDetailsShimmer() {
   return (
     <div className="shimmer-wrapper">
       <div className="shimmer-box">
