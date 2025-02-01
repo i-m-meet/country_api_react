@@ -5,13 +5,15 @@ import SelectMenu from "./SelectMenu";
 import "../App.css"
 import CountriesList from "./CountriesList";
 import { useState } from "react";
+import { useOutletContext } from 'react-router';
 
-export default function () {
+export default function Home() {
 
     const [query, setQuery] = useState('');
+    const [isDark]= useOutletContext()
 
   return (
-    <main>
+    <main className={`${isDark? "dark" : ""}`}>
         <div className="search-filter-container">
         <SearchBar setQuery={setQuery} />
        <SelectMenu/>

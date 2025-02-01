@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 
-export default function Header() {
+export default function Header({theme}) {
 
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = theme
 
   return (
-    <header className="header-container">
+    <header className={`header-container ${isDark? "dark" : ""}`}>
       <div className="header-content">
         <h2 className="title">
           <a href="/">Where in the world?</a>
         </h2>
-        <p className="theme-changer" onClick={() =>{
-          document.body.classList.toggle('dark');
+        <p className="theme-changer" onClick={() =>{          
           setIsDark(!isDark)
         }}>
           <i className={`fa-solid fa-${isDark? "sun" : "moon"}`}></i>&nbsp;&nbsp;{`${isDark? "Light" : "Dark"} mode`}
