@@ -14,7 +14,7 @@ export default function Header({theme}) {
         </h2>
         <p className="theme-changer" onClick={() =>{          
           setIsDark(!isDark)
-          localStorage.setItem('isDarkMode', !isDark);
+          localStorage.setItem('isDarkMode', !isDark)
         }}>
           <i className={`fa-solid fa-${isDark? "sun" : "moon"}`}></i>&nbsp;&nbsp;{`${isDark? "Light" : "Dark"} mode`}
         </p>

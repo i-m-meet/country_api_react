@@ -8,10 +8,9 @@ body {
     --elements-color: white;
     margin: 0;
     font-family: Nunito, sans-serif;
-   
 }
 
-main, header{
+main , header{
     background-color: var(--background-color);
     color: var(--text-color);
 }
@@ -24,7 +23,7 @@ main.dark, header.dark {
 
 main {
     padding: 24px;
-    min-height: calc(100vh - 75px);
+    min-height: calc(100vh - 73px);
 }
 
 a {

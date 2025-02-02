@@ -9,6 +9,7 @@ export default function CountryDetails() {
   const {state} = useLocation();
   const countryName = params.country;
   // console.log(state)
+
   const [isDark]= useOutletContext()
 
   const [countryData, setCountryData] = useState(null);
