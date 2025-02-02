@@ -16,7 +16,7 @@ main, header{
     color: var(--text-color);
 }
 
-main.dark,header.dark {
+main.dark, header.dark {
     --background-color: hsl(207, 26%, 17%); 
     --text-color: white;
     --elements-color: hsl(209, 23%, 22%);
@@ -24,7 +24,7 @@ main.dark,header.dark {
 
 main {
     padding: 24px;
-    min-height: 100vh;
+    min-height: calc(100vh - 75px);
 }
 
 a {
@@ -36,6 +36,8 @@ a {
     box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
     padding-inline: 24px;
     background-color: var(--elements-color);
+    position: sticky;
+    z-index: 1;
 }
 
 .header-content {
